@@ -1,0 +1,36 @@
+body {
+	background-color: darksalmon;
+	background: linear-gradient(90deg, darksalmon, pink, rgb(253, 234, 241));
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+	color: white;
+	text-shadow: 2px 2px gray;
+}
+
+input {
+	margin: 10px;
+	border: none;
+	height: 25px;
+}
+button {
+	height: 26px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background-color: lightcoral;
+}
+
+span {
+	color: white;
+	text-shadow: 2px 2px gray;
+	position: relative;
+	font-size: 25px;
+}
+
+.normal-text {
+	text-decoration: none;
+}
+.strike-text {
+	text-decoration: line-through;
+}
