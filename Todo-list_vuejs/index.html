@@ -13,8 +13,8 @@
 			</div>
 
 			<div>
-				<input id="newTask" type="text" placeholder="Add new todo" />
-				<button type="button" @click="addNewTask('#newTask')">Add</button>
+				<input v-model="newTaskText" type="text" placeholder="Add new todo" />
+				<button type="button" @click="addNewTask">Add</button>
 			</div>
 			<div v-for="item in tasks">
 				<input

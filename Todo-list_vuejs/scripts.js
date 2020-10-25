@@ -1,6 +1,7 @@
 const ToDoList = {
 	data() {
 		return {
+			newTaskText: '',
 			tasks: [
 				// { text: '', done: true },
 				// { text: 'Learn CSS', done: true },
@@ -11,11 +12,11 @@ const ToDoList = {
 		addNewTask(e) {
 			if (e) {
 				let newTask = {
-					text: document.getElementById('newTask').value,
+					text: this.newTaskText, //document.getElementById('newTask').value,
 					done: true,
 				};
 				this.tasks.push(newTask);
-				document.getElementById('newTask').value = '';
+				this.newTaskText = '';
 			}
 		},
 	},
